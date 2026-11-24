@@ -41,6 +41,17 @@ impl PositiveNonzeroInteger {
 
 fn main() {
     // You can optionally experiment here.
+    let val = PositiveNonzeroInteger::new(8);
+    println!("{val:?}");
+
+    let another_val = PositiveNonzeroInteger::parse("a");
+    println!("{another_val:?}");
+
+    let an_val = PositiveNonzeroInteger::parse("-5");
+    println!("{an_val:?}");
+
+    let anothe_va = PositiveNonzeroInteger::parse("0");
+    println!("{anothe_va:?}");
 }
 
 #[cfg(test)]
